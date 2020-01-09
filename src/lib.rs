@@ -67,10 +67,10 @@ mod tests {
         let mut contract = Soundario::default();
         let artists = vec!["zhao".to_string(), "qian".to_string(), "sun".to_string(), "li".to_string()];
         let shares = vec![10.0, 20.0, 30.0, 40.0];
-        let royalty_hash = vec![1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+        let royalty_hash = vec![1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32];
         let artists2 = vec!["zhou".to_string(), "wu".to_string(), "zheng".to_string(), "wang".to_string()];
         let shares2 = vec![40.0, 30.0, 20.0, 10.0];
-        let royalty_hash2 = vec![21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40];
+        let royalty_hash2 = vec![33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64];
         contract.new_royalty(royalty_hash.clone(), artists.clone(), shares.clone());
         contract.new_royalty(royalty_hash2.clone(), artists2.clone(), shares2.clone());
         let royalty = contract.get_royalty(royalty_hash);
